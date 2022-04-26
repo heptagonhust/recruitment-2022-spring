@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <cmath>
 #include <chrono>
 #include <vector>
 #include <cassert>
@@ -18,7 +19,7 @@ using namespace std;
 
 using namespace chrono;
 
-using vec = vector<float>; 
+using vec = vector<int>; 
 
 const int scale[] = {256, 512, 1024, 2048};
 const string data_path("./data/");
@@ -44,15 +45,16 @@ void CheckResult(const vec &c, const string &result_path) {
 // c = a * b
 void Benchmark(const int &size) {
     const int nelems = size * size;
-    const string a_path(data_path+to_string(size)+"a");
-    const string b_path(data_path+to_string(size)+"b");
-    const string result_path(data_path+to_string(size)+"result");
+    const string a_path(data_path+to_string(size)+"/a");
+    const string b_path(data_path+to_string(size)+"/b");
+    const string result_path(data_path+to_string(size)+"/result");
     ifstream file_a(a_path);
     ifstream file_b(b_path);
+    cout << a_path << " " << b_path << endl;
 
-    vec a(nelems);
-    vec b(nelems);
-    vec c(nelems);
+    vec a(nelems, 0);
+    vec b(nelems, 0);
+    vec c(nelems, 0);
 
     for(int i = 0; i < nelems; i++) {
         file_a >> a[i];

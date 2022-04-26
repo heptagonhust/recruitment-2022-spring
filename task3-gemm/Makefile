@@ -8,4 +8,7 @@ clean:
 .PHONY: run
 run: 
 	./gemm
-	 
+
+.PHONY: rmdata
+rmdata:
+	- rm -rf data*	 

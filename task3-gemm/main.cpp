@@ -50,7 +50,6 @@ void Benchmark(const int &size) {
     const string result_path(data_path+to_string(size)+"/result");
     ifstream file_a(a_path);
     ifstream file_b(b_path);
-    cout << a_path << " " << b_path << endl;
 
     vec a(nelems, 0);
     vec b(nelems, 0);

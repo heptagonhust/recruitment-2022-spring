@@ -20,7 +20,7 @@ https://github.com/heptagonhust/recruitment-2022-spring
 
 构建并运行 `prog1_mandelbrot_threads/` 文件夹下的代码（使用 `make` 构建，`./mandelbrot` 运行），这个程序将会生成一个图像文件 `mandelbrot-serial.ppm` ，它是 Mandelbrot 集的可视化，可以使用 `display` 命令显示生成的图片。
 
-![img](https://heptagonhust.feishu.cn/space/api/box/stream/download/asynccode/?code=NjZkODMzMjEyNDIwZmU1ZDNhYzBjOGJlZDc2YmE3NmFfVzVqZ3EzelFXWjVhRFMyeGNpa0VyeUlleklVNnNnTjdfVG9rZW46Ym94Y25pNlVua2NjODRSM0V6RjgwTUJQZnJjXzE2NTEwNDcwMjA6MTY1MTA1MDYyMF9WNA)
+![img](https://camo.githubusercontent.com/4417cbd19f53e7ac9532d3d0d257780082f784cb39767be9142afb474ab62223/687474703a2f2f67726170686963732e7374616e666f72642e6564752f636f75727365732f6373333438762d31382d77696e7465722f617373745f696d616765732f61737374312f6d616e64656c62726f745f76697a2e6a7067)
 
 如上图所示，生成的图像是分形图。图像中的每一个像素对应了复平面中的一个值，每个像素的亮度与确定该值是否被包含在 Mandelbrot 集中所需的计算成本成正比。 可以通过 `./mandelbrot --view 2`选项得到图像 2 。
 

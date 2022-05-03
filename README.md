@@ -99,7 +99,7 @@ SIMD(Single Instruction Multiple Data)是CPU提供的指令集，通过使用向
 
 在开始优化之前，你应当执行`./fetch_data.sh`来获取数据`data/`，然后测量并记录baseline的时间。
 
-可以使用`make`进行编译，`make run`运行程序。注意，**Makefile中的编译选项不可修改**。
+可以使用`make`进行编译，`make run`运行程序。注意，**Makefile中的编译优化等级不可修改**。
 
 data目录如下
 
